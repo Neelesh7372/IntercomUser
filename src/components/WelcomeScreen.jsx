@@ -16,7 +16,7 @@ const WelcomeScreen = () => {
     return (
         <div style={styles.container}>
             <h1>Welcome to My App</h1>
-            <button onClick={handleStart}>Get Started</button>
+            <button style={styles.button} onClick={handleStart}>Get Started</button>
         </div>
     );
 };
@@ -30,6 +30,15 @@ const styles = {
         height: '100vh',
         backgroundColor: '#f0f0f0',
     },
+    button: {
+        padding: '10px 20px',
+        fontSize: '16px',
+        backgroundColor: '#0077cc',
+        color: '#fff',
+        border: 'none',
+        borderRadius: '5px',
+        cursor: 'pointer',
+    }
 };
 
 export default WelcomeScreen;
